@@ -76,7 +76,7 @@ const SemesterFeeTable = () => {
                 <td>{row.endDate}</td>
                 <td>{row.extendedEndDate}</td>
                 <td>
-                  <Link to="/payNow" state={{ feeType: "Semester Fee" }}>
+                  <Link to="/RUET-ePayment/payNow" state={{ feeType: "Semester Fee" }}>
                     {row.status}
                   </Link>
                 </td>
