@@ -13,8 +13,7 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/RUET-ePayment" element={<Home />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/RUET-ePayment/" element={<Home />} />
         <Route path="/RUET-ePayment/payNow" element={<PaymentForm />} />
         <Route path="/RUET-ePayment/Faculty-and-depts" element={<FacultyAndDept />} />
         <Route path="/RUET-ePayment/search-receipt" element={<SearchReceipt />}></Route>
