@@ -1,0 +1,31 @@
+.footer-container{
+    @apply flexx;
+    flex-direction: column;
+    background-color: var(--secondary-background-color);
+    margin-top: 2rem;
+}
+.footer-container img{
+    margin: 1rem;
+    width: 60%;
+}
+.footer-container .copy-right{
+    font-size: .8rem;
+    background-color: #667687;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+.footer-container .copy-right a{
+    color: var(--secondary-background-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 400px){
+    .footer-container img{
+        width: 100%;
+    }
+    .footer-container .copy-right{
+        font-size: .7rem;
+    }
+}

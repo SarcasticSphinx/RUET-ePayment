@@ -1,0 +1,95 @@
+.faculty-container {
+    @apply flexx;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+.registrar-info{
+    font-size: 14px;
+}
+
+.faculty-container h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.faculty-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faculties {
+    margin-top: 20px;
+}
+
+.faculties ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faculties li {
+    margin-bottom: 10px;
+    background-color: #B5D6FB;
+    border: 1px solid var(--primary-stroke-color);
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 40rem;
+    font-weight: 500;
+}
+
+.faculty-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s;
+    margin-left: 10px;
+}
+
+.dropdown-icon.open {
+    transform: rotate(180deg);
+}
+.departments {
+    @apply flexx;
+    flex-direction: column;
+    gap: 5px;  
+    margin: 10px 0;
+}
+
+.departments li {
+    margin-bottom: 5px;
+    background-color: #B1CFF0;
+    border: 1px solid var(--primary-stroke-color);
+    border-radius: 4px;
+    padding: 8px 10px;
+    transition: all 0.3s;
+    width: 35rem;
+    font-weight: normal;
+}
+.departments li:hover{
+    background-color: #B5D6FB;
+}
+
+@media (max-width: 400px){
+    .faculty-container{
+        padding: 0 1rem;
+    }
+    .faculty-container h1{
+        font-size: 20px;
+    }
+    .faculties li{
+        width: 100%;
+    }
+    .departments a{
+        width: 100%;    
+    }
+}

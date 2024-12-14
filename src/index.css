@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .flexx {
+        @apply flex justify-center items-center;
+    }
+}
+
+
+:root{
+    --nav-background-color: #43505D;
+    --primary-background-color: #E3F2FB;
+    --secondary-background-color: #CFE2EE;
+    --primary-stroke-color: #027BFF;
+    --button-color: #027BFF;
+    --green-alert: #D4EDDA;
+    --red-alert: #F9D7DA;
+}
+
+html{
+    font-family: Poppins, sans-serif;
+}
+body{
+    background-color: var(--primary-background-color);
+    /* padding: 0 10rem; */
+    padding-top: 1rem;
+}
+
+.container{
+    @apply flexx;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+
+@media (max-width: 400px){
+    body{
+        font-size: 14px;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+}
+
+

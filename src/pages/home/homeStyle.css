@@ -1,0 +1,72 @@
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 15rem;
+    margin: 2rem 0;
+}
+.exam-office , .fee-options{
+    align-self: flex-start;
+}
+.section-heading{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1rem;
+    text-align: center;
+}
+.fee-options{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: .5rem;
+}
+.fee-options .option{
+    @apply flexx;
+    background-color: var(--secondary-background-color);
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.fee-options .option a{
+    background-color: var(--button-color);
+    color: white;
+    font-size: 14px;
+    padding: .2rem .5rem;
+    margin: 0 .2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fee-options .option a:hover{
+    background-color: #0056b3;
+}
+.horizontal-divider{
+    width: 1px;
+    background-color: var(--nav-background-color);
+    opacity: .6;
+}
+
+@media (max-width: 768px){
+    .home-container{
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: 1rem;
+    }
+    .exam-office , .fee-options{
+        align-self: center;
+    }
+    .fee-options .option{
+        padding: 1rem;
+    }
+    .fee-options .option a{
+        font-size: 12px;
+        min-width: fit-content;
+        text-align: center;
+    }
+    .section-heading{
+        font-size: 1.2rem;
+    }
+    section{
+        margin: 0;
+    }
+}

@@ -1,0 +1,51 @@
+.semester-fee-table {
+  margin: 20px 0;
+}
+
+.semester-fee-table .table-container h2 {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.semester-fee-table table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+.semester-fee-table th,
+.semester-fee-table td {
+  border: 0.5px solid var(--primary-stroke-color);
+  padding: 8px;
+}
+
+.semester-fee-table th {
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+}
+
+.semester-fee-table a {
+  text-decoration: underline;
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .registrar-info {
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling only on small screens */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .semester-fee-table table {
+    min-width: max-content; /* Prevents table from being too small */
+    width: auto; /* Allow table to grow based on content */
+  }
+}
