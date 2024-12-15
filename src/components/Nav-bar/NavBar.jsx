@@ -39,7 +39,7 @@ const NavBar = () => {
           <img className="dropDownMenuImg" src={dropDownMenuImg} alt="Menu" />
         </div>
         <div className={`nav-links ${dropDownMenu ? "active" : ""}`}>
-          <NavLink exact to="/RUET-ePayment/">
+          <NavLink to="/RUET-ePayment/" end>
             Home
           </NavLink>
           <NavLink to="/RUET-ePayment/search-receipt">

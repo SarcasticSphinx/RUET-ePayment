@@ -7,6 +7,7 @@ import FacultyAndDept from "./pages/sub-pages/Faculty and department/facultyAndD
 import SearchReceipt from "./pages/Search For payment Receipt/searchReceipt";
 import Support from "./pages/support/Support";
 import SemesterFeeTable from "./pages/sub-pages/dates/SemesterFeeTable";
+import Statistics from "./pages/payment statistics/Statistics";                                                      
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/RUET-ePayment/search-receipt" element={<SearchReceipt />}></Route>
         <Route path="/RUET-ePayment/support" element={<Support />}></Route>
         <Route path="/RUET-ePayment/SemesterFeeTable" element={<SemesterFeeTable/>}></Route>
-      </Routes>
+        <Route path="/RUET-ePAyment/statistics" element={<Statistics/>}></Route>
+      </Routes> 
       <Footer />
     </>
   );
